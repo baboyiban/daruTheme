@@ -1,0 +1,7 @@
+.vscode
+.vscode-test
+.vscodeignore
+vsc-extension-quickstart.md
+daruTheme-0.0.1.vsix
+daru-0.0.1.vsix
+.DS_Store

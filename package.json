@@ -1,0 +1,22 @@
+{
+    "name": "daru",
+    "displayName": "daruTheme",
+    "description": "daruTheme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "publisher": "daruhan",
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "daru",
+                "uiTheme": "vs",
+                "path": "./themes/daru-color-theme.json"
+            }
+        ]
+    }
+}

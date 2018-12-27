@@ -43,7 +43,6 @@
 		"editor.stackFrameHighlightBackground": "#b3d8fd",
 		"editor.wordHighlightBackground": "#b3d8fd",
 		"editor.wordHighlightStrongBackground": "#157efb99",
-		//"editorActiveLineNumber.foreground": "#000000",
 		"editorBracketMatch.background": "#b3d8fd",
 		"editorBracketMatch.border": "#b3d8fd",
 		"editorCodeLens.foreground": "#999999",
@@ -56,7 +55,7 @@
 		"editorGutter.addedBackground": "#69A7FC",
 		"editorGutter.background": "#ffffff",
 		"editorGutter.commentRangeForeground": "#69A7FC",
-		"editorGutter.deletedBackground": "#69A7FC",
+		"editorGutter.deletedBackground": "#69a7fc99", //69a7fc
 		"editorGutter.modifiedBackground": "#69A7FC",
 		"editorHint.foreground": "#999999",
 		"editorHoverWidget.background": "#ececec",
@@ -72,20 +71,20 @@
 		"editorMarkerNavigationError.background": "#FEEFEA",
 		"editorMarkerNavigationInfo.background": "#ECF1EC",
 		"editorMarkerNavigationWarning.background": "#FEF7E4",
-		"editorOverviewRuler.addedForeground": "#E2EEFF",
+		"editorOverviewRuler.addedForeground": "#69A7FC99",
 		"editorOverviewRuler.border": "#00000000",
 		"editorOverviewRuler.bracketMatchForeground": "#B3D8FD",
 		"editorOverviewRuler.commonContentForeground": "#99999999",
 		"editorOverviewRuler.currentContentForeground": "#14953D99",
 		"editorOverviewRuler.deletedForeground": "#FAE4C9",
-		"editorOverviewRuler.errorForeground": "#DF1921",
+		"editorOverviewRuler.errorForeground": "#DF1921cc",
 		"editorOverviewRuler.findMatchForeground": "#B3D8FD",
 		"editorOverviewRuler.incomingContentForeground": "#157efb99",
 		"editorOverviewRuler.infoForeground": "#14953D99",
 		"editorOverviewRuler.modifiedForeground": "#69A7FC",
 		"editorOverviewRuler.rangeHighlightForeground": "#b3d8fd",
 		"editorOverviewRuler.selectionHighlightForeground": "#b3d8fd",
-		"editorOverviewRuler.warningForeground": "#FDC34099",
+		"editorOverviewRuler.warningForeground": "#FDC340cc",
 		"editorOverviewRuler.wordHighlightForeground": "#b3d8fd",
 		"editorOverviewRuler.wordHighlightStrongForeground": "#157efb99",
 		"editorPane.background": "#ececec",
@@ -288,24 +287,6 @@
 			"scope": "invalid.illegal",
 			"settings": {
 				"foreground": "#DF1921"
-			}
-		},
-		{
-			"name": "Operators",
-			"scope": "keyword.operator",
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Keywords",
-			"scope": [
-				"keyword",
-				"storage"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#AB42A2"
 			}
 		},
 		{
@@ -517,13 +498,6 @@
 			}
 		},
 		{
-			"name": "CSS: Important Keyword",
-			"scope": "keyword.other.important",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
 			"name": "Markup: Changed",
 			"scope": "markup.changed",
 			"settings": {
@@ -690,6 +664,78 @@
 			"settings": {
 				"foreground": "#14953D"
 			}
-		}
+		},
+		/// storage start ///
+		{
+			"name": "",
+			"scope": "storage.type",
+			"settings": {
+				"foreground": "#AB42A2",
+				"fontStyle": "bold",
+			}
+		},
+		{
+			"name": "",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		/// storage end ///
+		/// keyword start ///
+		{
+			"name": "",
+			"scope": "keyword",
+		},
+		{
+			"name": "CSS: Important Keyword",
+			"scope": "keyword.other.important",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "",
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#77492D",
+			}
+		},
+		{
+			"name": "", /* << */
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		{
+			"name": "", /* 산수 */
+			"scope": "keyword.operator.arithmetic",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		{
+			"name": "", /* = */
+			"scope": "keyword.operator.assignment",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		{
+			"name": "",
+			"scope": "keyword.operator.logical",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		{
+			"name": "",
+			"scope": "keyword.operator.new",
+			"settings": {
+				"foreground": "#000000",
+			}
+		},
+		/// keyword end ///
 	]
 }

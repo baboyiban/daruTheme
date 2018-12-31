@@ -344,21 +344,8 @@
 		{
 			"name": "Keywords",
 			"scope": [
-				"keyword.control", // import, export, switch, return, as, from, @include, @mixin
-				"keyword.declaration", // import (Swift)
-				"keyword.expressions-and-types", // self
-				"keyword.operator.new", // new
-				"keyword.reserved", // override
-				"keyword.statement", // guard
-				"storage.type", // class, var, const, =>, function
-				"storage.modifier", // private,
-				"constant.language", // true, false
-				"variable.language.super", // super()
-				"variable.language.this", // this
-				"text.html entity.name.tag", // <html>
-				"meta.tag entity.name.tag", // <jsx>
-				"meta.tag support.class", // <jsx>
-				"string.regexp keyword.other" // //g
+				"name": "Exceptions",
+				"scope": "entity.name.exception",
 			],
 			"settings": {
 				"foreground": "#999999"
@@ -384,7 +371,11 @@
 		},
 		{
 			"name": "Strings",
-			"scope": "string",
+			"scope": [
+				"string",
+				"punctuation.definition.string.begin",
+				"punctuation.definition.string.end",
+			],
 			"settings": {
 				"foreground": "#CF3125"
 			}
@@ -408,13 +399,6 @@
 			"scope": "constant.other.symbol",
 			"settings": {
 				"foreground": "#CF3125"
-			}
-		},
-		{
-			"name": "Punctuation",
-			"scope": "punctuation",
-			"settings": {
-				"foreground": "#000000"
 			}
 		},
 		{
@@ -482,36 +466,10 @@
 		{
 			"name": "CSS: Selectors",
 			"scope": [
-			  "source.js constant.other.object.key.js string.unquoted.label.js",
-			  "source.js punctuation.section.embedded",
-			  "punctuation.definition.template-expression",
-			  "support.class",
-			  "entity.name.type",
-			  "storage.type.string.python",
-			  "string.interpolated.pug",
-			  "support.constant.handlebars",
-			  "source.clojure punctuation.section.set",
-			  "source.clojure punctuation.section.metadata",
-			  "entity.global.clojure",
-			  "source.python meta.function-call.python support.type.python",
-			  "constant.character.format.placeholder.other.python",
-			  "entity.other.inherited-class.python",
-			  "punctuation.definition.interpolation",
-			  "constant.other.placeholder.go",
-			  "constant.other.placeholder.c",
-			  "punctuation.section.embedded.begin.ruby",
-			  "punctuation.section.embedded.end.ruby source.ruby",
-			  "support.constant.math",
-			  "punctuation.section.embedded.coffee",
-			  "entity.namespace.r",
-			  "meta.method-call.groovy storage.type.groovy",
-			  "punctuation.section.embedded.groovy",
-			  "entity.name.function-table.lua",
-			  "source.scala entity.name.class.declaration",
-			  "constant.character.escape",
-			  "support.function.macro.julia",
-			  "string.replacement.apacheconf",
-			  "storage.modifier.using.vala"
+				"meta.selector",
+				"meta.selector entity",
+				"meta.selector entity punctuation",
+				"entity.name.tag.css"
 		   ],
 		   "settings": {
 				"foreground": "#4B2AAD"
@@ -707,27 +665,23 @@
 				"foreground": "#14953D"
 			}
 		},
-		/// storage start ///
 		{
-			"name": "",
-			"scope": "storage.type",
+			"name": "Operators",
+			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#AB42A2",
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Keywords",
+			"scope": [
+				"keyword",
+				"storage"
+			],
+			"settings": {
 				"fontStyle": "bold",
+				"foreground": "#AB42A2"
 			}
-		},
-		{
-			"name": "",
-			"scope": "storage.modifier",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		/// storage end ///
-		/// keyword start ///
-		{
-			"name": "",
-			"scope": "keyword",
 		},
 		{
 			"name": "CSS: Important Keyword",
@@ -736,48 +690,5 @@
 				"fontStyle": "bold"
 			}
 		},
-		{
-			"name": "",
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#77492D",
-			}
-		},
-		{
-			"name": "", /* << */
-			"scope": "keyword.operator",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		{
-			"name": "", /* 산수 */
-			"scope": "keyword.operator.arithmetic",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		{
-			"name": "", /* = */
-			"scope": "keyword.operator.assignment",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		{
-			"name": "",
-			"scope": "keyword.operator.logical",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		{
-			"name": "",
-			"scope": "keyword.operator.new",
-			"settings": {
-				"foreground": "#000000",
-			}
-		},
-		/// keyword end ///
 	]
 }

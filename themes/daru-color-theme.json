@@ -342,8 +342,24 @@
 			}
 		},
 		{
-			"name": "Exceptions",
-			"scope": "entity.name.exception",
+			"name": "Keywords",
+			"scope": [
+				"keyword.control", // import, export, switch, return, as, from, @include, @mixin
+				"keyword.declaration", // import (Swift)
+				"keyword.expressions-and-types", // self
+				"keyword.operator.new", // new
+				"keyword.reserved", // override
+				"keyword.statement", // guard
+				"storage.type", // class, var, const, =>, function
+				"storage.modifier", // private,
+				"constant.language", // true, false
+				"variable.language.super", // super()
+				"variable.language.this", // this
+				"text.html entity.name.tag", // <html>
+				"meta.tag entity.name.tag", // <jsx>
+				"meta.tag support.class", // <jsx>
+				"string.regexp keyword.other" // //g
+			],
 			"settings": {
 				"foreground": "#999999"
 			}
@@ -466,12 +482,38 @@
 		{
 			"name": "CSS: Selectors",
 			"scope": [
-				"meta.selector",
-				"meta.selector entity",
-				"meta.selector entity punctuation",
-				"entity.name.tag.css"
-			],
-			"settings": {
+			  "source.js constant.other.object.key.js string.unquoted.label.js",
+			  "source.js punctuation.section.embedded",
+			  "punctuation.definition.template-expression",
+			  "support.class",
+			  "entity.name.type",
+			  "storage.type.string.python",
+			  "string.interpolated.pug",
+			  "support.constant.handlebars",
+			  "source.clojure punctuation.section.set",
+			  "source.clojure punctuation.section.metadata",
+			  "entity.global.clojure",
+			  "source.python meta.function-call.python support.type.python",
+			  "constant.character.format.placeholder.other.python",
+			  "entity.other.inherited-class.python",
+			  "punctuation.definition.interpolation",
+			  "constant.other.placeholder.go",
+			  "constant.other.placeholder.c",
+			  "punctuation.section.embedded.begin.ruby",
+			  "punctuation.section.embedded.end.ruby source.ruby",
+			  "support.constant.math",
+			  "punctuation.section.embedded.coffee",
+			  "entity.namespace.r",
+			  "meta.method-call.groovy storage.type.groovy",
+			  "punctuation.section.embedded.groovy",
+			  "entity.name.function-table.lua",
+			  "source.scala entity.name.class.declaration",
+			  "constant.character.escape",
+			  "support.function.macro.julia",
+			  "string.replacement.apacheconf",
+			  "storage.modifier.using.vala"
+		   ],
+		   "settings": {
 				"foreground": "#4B2AAD"
 			}
 		},
